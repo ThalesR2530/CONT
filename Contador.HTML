@@ -1,15 +1,29 @@
-const h2 = document.querySelector("h2");
+<!DOCTYPE html>
+<html lang="pt-br">
 
-function aumnetar() {
-h2.innerText = parseInt(h2.innerText) + 1
-  }
-
-function diminuir() {
-h2.innerText -= 1
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contador</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
   
-  }
-
-function zerar() {
-  h2.innerText = 0
+</head>
+<body>
   
-}
+<main>
+  <section>
+     <h1>Contador</h1>
+    <h2>0</h2>
+    
+    <div id="buttons">
+      <button onclick="diminuir()">diminuir</button>
+      <button onclick="limpar()">limpar</button>
+      <button onclick="aumentar()">aumentar</button>
+    </div>
+    
+  </section>
+</main>  
+
+</body>
+  <script src="script.js" ></script>
+</html>
